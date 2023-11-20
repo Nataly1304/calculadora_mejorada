@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo con javascript</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Enlazamos el archivo de JavaScript "calculadora.js" -->
+    <script src="calculadora.js"></script>
+    <!-- se agrega un título centrado -->
+    <h1 style="text-align: center;">trabajo con javascript</h1>
+    <!-- Inicia un contenedor div con la clase "caja" -->
+    <div class="caja">
+    <!-- Crea un input para el primer número -->
+    <input type="number" id="n1" class="form-control" placeholder="numero 1"/> <br/>
+    <!-- Crea un input para el segundo número -->
+    <input type="number" id="n2" class="form-control" placeholder="numero 1"/> <br/>
+      <!-- Crea un menú desplegable (select) con opciones de operaciones matemáticas -->
+    <select class="form-selct" aria-label="defaul select example" id="opc">
+
+    <option selected> opcion</option>
+    <option value="1">sumar</option>
+    <option value="2">restar</option>
+    <option value="3">multiplicar</option>
+    <option value="4">dividir</option>
+    <option value="5">potencia del primer numero</option>
+    </select>
+    <br>
+     <!-- Crea un botón que, al hacer clic, llamará a la función "mostrar()" -->
+    <button onclick="mostrar()" class="btn btn-outline-dark">calculadora</button>
+    <!-- mostrar el resultado total de las funciones -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+    <strong id="resultado"></strong>
+    <!-- Agrega un botón para cerrar la alerta -->
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+    </div>
+
+</body>
+</html>

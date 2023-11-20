@@ -1,0 +1,14 @@
+div#respuesta{
+
+    display: none;
+}
+
+/* Estilos para la clase "caja" */
+.caja{ 
+
+    width: 280px;
+    height: 80px;
+    position: sticky;
+    top: 30px; left: 400px;
+}
+
